@@ -23,7 +23,7 @@ body {
     margin-inline: 20px;
 }
 
-.non-active, hr {
+.non-active {
     color: #aeaeae;
 }
 
@@ -85,15 +85,21 @@ h3 {
 
 .card {
     flex: 0 0 250px;
-    background-color: #dcdcdc;
     margin: 2rem;
+}
+
+.eachcard {
+    height: 320px;
+    width: 500px;
     border-radius: 8px;
 }
 
-.home {
-    height: 280px;
-    width: 500px;
-    border-radius: 8px 8px 0 0;
+.eachcard:hover {
+    opacity: 0.7;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.25s ease;
 }
 
 p {
