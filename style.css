@@ -1,145 +1,185 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: "Verdana", Arial, sans-serif;
-    background-color: white;
+  margin: 0;
+  font-family: 'Varela Round';
+  background-color: white;
 }
 
 /* Home Page Bar */
 .topnav {
-    float: right;
-    margin: 40px 80px 0 0;
+  float: right;
+  margin: 40px 80px 0 0;
 }
 
 .topnav a {
-    text-decoration: none;
-    font-size: 1.23em;
-    font-weight: 500;
-    width: 80px;
-    margin-inline: 20px;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: 500;
+  width: 80px;
+  margin-inline: 20px;
 }
 
 .non-active {
-    color: #aeaeae;
+  color: #aeaeae;
 }
 
 .active {
-    color: #3c3c3c;
+  color: #3c3c3c;
 }
 
 .topnav a:hover {
-    color: #dfd16b;
+  color: #3c3c3c;
 }
 
 .topnav .dot {
-    margin-top: 6px;
-    width: 20px;
-    height: 4px;
-    background: #dfd16b;
-    border-radius: 15%;
-    opacity: 0;
+  margin-top: 6px;
+  width: 40px;
+  height: 3px;
+  background: #94A8B0;
+  opacity: 0;
 }
 
 .topnav a:nth-child(1):hover ~ .dot {
-    transform: translateX(50px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 .topnav a:nth-child(2):hover ~ .dot {
-    transform: translateX(165px);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    opacity: 1;
+  transform: translateX(150px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 /* Home Page Intro */
-header {
-    text-align: center;
-    margin: 180px 200px 180px 200px;
+.home-header {
+  text-align: center;
+  font-size: 20px;
+  margin: 180px 250px 180px 250px;
 }
 
 /* Home Page Cards */
 .container {
-    padding-top: 120px;
-    padding-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f7fbfd;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: #f7fbfd; */
 }
 
 .card {
-    flex: 0 0 250px;
-    margin: 2rem;
+  flex: 0 0 250px;
+  margin: 2rem;
 }
 
 .eachcard {
-    height: 375px;
-    width: 500px;
-    border-radius: 10px;
+  height: 375px;
+  width: 500px;
 }
 
 .eachcard:hover {
-    opacity: 0.6;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
-    transition: 0.25s ease;
+  opacity: 0.6;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.25s ease;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-bottom: 0px;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
 /* About Page */
 .logo {
-    margin: 40px 0 12px 100px;
-}
-
-section:first-child {
-    flex-basis: 240px;
-}
-
-section:last-child {
-    flex-basis: 800px;
-    margin-top: 60px;
+  margin: 40px 0 12px 100px;
 }
 
 .intro {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.intro section:last-child {
+  flex-basis: 730px;
+  margin-top: 60px;
 }
 
 .ruo {
-    width: 250px;
-    border-radius: 50%;
-    float: left;
-    margin: 80px 0 0 120px;
+  width: 250px;
+  border-radius: 50%;
+  float: left;
+  margin: 80px 0 0 120px;
 }
 
 .name, .intro p {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    padding-inline: 80px;
-    line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-inline: 100px;
+  line-height: 1.5;
 }
 
 small {
-    font-size: 1.12rem;
-    margin-top: 5px;
+  font-size: 1.12rem;
+  margin-top: 5px;
 }
 
 footer {
-    margin: 50px 0 40px 0;
-    font-size: 15px;
+  margin: 50px 0 40px 0;
+  font-size: 15px;
 }
 
 .fa {
-    color: rgb(160, 160, 185);
+  color: #94a8b0;
+  margin-left: 4px;
+}
+
+/* Each Card Pages */
+.top-picture {
+  width: 50%;
+  display: block;
+  margin: 50px auto 0px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.project-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.project-top section {
+  margin-left: 50px;
+}
+
+.project-top p {
+  text-align: left;
+}
+
+.project-text {
+  margin: 70px 0 0 70px;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 500;
+  color:rgb(73, 73, 73);
+  border: 1px solid #94a8b0;
+  display: inline-block;
+  padding: 0.5rem;
 }
