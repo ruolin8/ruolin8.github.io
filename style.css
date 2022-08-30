@@ -8,6 +8,29 @@ body {
   background-color: white;
 }
 
+/* Progress Bar */
+.progress-bar:before {
+  content: "";
+  display: block;
+  background: linear-gradient(to right top, #CDDC39 0%, #03A9F4 50%, #e6f0f5 50%);
+  height: calc(100% - 100vh + 6px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-bar:after {
+  content: "";
+  display: block;
+  height: calc(100vh - 6px);
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
 /* Home Page Bar */
 .topnav {
   float: right;
@@ -38,7 +61,7 @@ body {
   margin-top: 6px;
   width: 40px;
   height: 3px;
-  background: #94A8B0;
+  background: #94a8b0;
   opacity: 0;
 }
 
@@ -148,7 +171,7 @@ footer {
 
 /* Each Card Pages */
 .top-picture {
-  width: 50%;
+  width: 100%;
   display: block;
   margin: 50px auto 0px auto;
 }
