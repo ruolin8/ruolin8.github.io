@@ -8,27 +8,8 @@ body {
   background-color: white;
 }
 
-/* Progress Bar */
-.progress-bar:before {
-  content: "";
-  display: block;
-  background: linear-gradient(to right top, #CDDC39 0%, #03A9F4 50%, #e6f0f5 50%);
-  height: calc(100% - 100vh + 6px);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.progress-bar:after {
-  content: "";
-  display: block;
-  height: calc(100vh - 6px);
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  left: 0;
+p {
+  font-size: 16.5px;
 }
 
 /* Home Page Bar */
@@ -58,22 +39,22 @@ body {
 }
 
 .topnav .dot {
-  margin-top: 6px;
-  width: 40px;
+  margin-top: 5px;
+  width: 30px;
   height: 3px;
   background: #94a8b0;
   opacity: 0;
 }
 
 .topnav a:nth-child(1):hover ~ .dot {
-  transform: translateX(40px);
+  transform: translateX(44px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
 
 .topnav a:nth-child(2):hover ~ .dot {
-  transform: translateX(150px);
+  transform: translateX(155px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -84,6 +65,10 @@ body {
   text-align: center;
   font-size: 20px;
   margin: 180px 250px 180px 250px;
+}
+
+.home-header p {
+  font-size: 18px;
 }
 
 /* Home Page Cards */
@@ -102,7 +87,7 @@ body {
 }
 
 .eachcard {
-  height: 375px;
+  height: 360px;
   width: 500px;
 }
 
@@ -115,12 +100,22 @@ body {
 }
 
 .card h2 {
-  font-size: 22px;
+  font-size: 26px;
   margin-bottom: 0px;
 }
 
-p {
+.tag {
+  font-size: 15px;
+  font-weight: 500;
+  color:rgb(73, 73, 73);
+  border: 1px solid #94a8b0;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+footer p {
   text-align: center;
+  font-size: 15px;
 }
 
 /* About Page */
@@ -169,40 +164,48 @@ footer {
   margin-left: 4px;
 }
 
-/* Each Card Pages */
+/* Each Project Page */
+.project-top {
+  text-align: center;
+  margin: 80px 0 80px 0;
+}
+
 .top-picture {
   width: 100%;
   display: block;
-  margin: 50px auto 0px auto;
 }
 
-.title {
-  text-align: center;
-}
-
-.project-top {
+.project-team {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin: 40px 0 0 160px;
 }
 
-.project-top section {
+.project-team section:last-child {
   margin-left: 50px;
 }
 
-.project-top p {
+.project-team p {
   text-align: left;
 }
 
 .project-text {
-  margin: 70px 0 0 70px;
+  margin: 60px 160px 0 160px;
+  line-height: 1.7;
 }
 
-.tag {
-  font-size: 14px;
-  font-weight: 500;
-  color:rgb(73, 73, 73);
-  border: 1px solid #94a8b0;
-  display: inline-block;
-  padding: 0.5rem;
+hr {
+  margin: -15px 0 30px 0;
+}
+
+.project-text img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.project-text p {
+  margin-left: 40px;
+  margin-right: 40px;
 }
