@@ -190,7 +190,7 @@ footer {
 }
 
 .project-text {
-  margin: 60px 160px 0 160px;
+  margin: 60px 170px 0 170px;
   line-height: 1.7;
 }
 
@@ -208,4 +208,25 @@ hr {
 .project-text p {
   margin-left: 40px;
   margin-right: 40px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.insights {
+  margin-bottom: 60px;
+}
+
+.two-images {
+  display: flex;
+  width: 60%;
+}
+
+.two-images img {
+  margin-inline: 10px;
+}
+
+.joyos-low {
+  margin-top: 40px;
 }
