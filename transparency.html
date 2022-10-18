@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Ruolin Chen">
-    <meta name="description" content="Portfolio">
-    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <title>Ruolin Chen</title>
-    <link rel="icon" type="image/x-icon" href="img/rc.png">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="author" content="Ruolin Chen">
+	<meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="topnav">
-        <a href="index.html" class="active">projects</a>
-        <a href="about.html" class="non-active">about</a>
-        <div class="dot"></div>
-    </nav>
-    <img class="logo" src="img/name.png" alt="my name" width="50px">
+    <!-- Navigation -->
+	<div class="main-nav">
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li class="active"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+	</div>
 
     <div class="project-top">
         <h1 class="title">Transparency Portal</h1>
-        <p>For residents to learn about how the City of Seattle spends COVID-19 federal relief funds.</p>
+        <p>For Seattle residents to learn about how the City of Seattle spends COVID-19 federal relief funds.</p>
     </div>
     <img class="top-picture" src="img/portal.png" alt="a snapshot of the Seattle Rescue Plan Transparency Portal">
 
@@ -67,14 +73,13 @@
         <h4>III. Review and reflection</h4>
         <p>Over the two month of my internship, I have gained experience of working with a team and partcipate in design critiques as well as creating iterations. There are certain limitations with ArcGIS Experience Builder and my team tried our best to match the City's style guide. If there are alternative choices like programming from scratch, we might have the opportunity to optimized the UI. Since I joined the team towards the launching date, I was able to quickly learn the tool and listen in meetings and providing suggestions from a new perspective. Our main question is why should we put this visualization on the page and what data does it tell to the audience? I wrote a instruction on how to update the mobile and tablet version. On the last day, I presented the 4 new pages that were added to the Transparency Portal. </p>
     </div>
-</body>
 
-<footer>
-    <p>
-        Contact me at 
-        <a href="mailto:ruolin8@gmail.com"><i class="fa fa-google" aria-label="github" style="font-size:24px"></i></a>
-        <a href="https://www.linkedin.com/in/ruolin8/"><i class="fa fa-linkedin" aria-label="linkedin" style="font-size:24px"></i></a>
-    </p>
-    <p>&copy; 2022 Ruolin Chen</p>
-</footer>
+    <footer>
+		<div class="container">
+			<p>
+				Contact me on &nbsp;<a href="https://www.linkedin.com/in/ruolin8/"><i class="fa fa-linkedin" aria-label="linkedin" style="font-size:24px"></i></a>
+			</p>
+		</div>
+	</footer>
+</body>
 </html>

@@ -1,55 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Ruolin Chen">
-    <meta name="description" content="Portfolio">
-    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
     <title>Ruolin Chen</title>
-    <link rel="icon" type="image/x-icon" href="img/rc.png">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="author" content="Ruolin Chen">
+	<meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="topnav">
-        <a href="index.html" class="active">projects</a>
-        <a href="about.html" class="non-active">about</a>
-        <div class="dot"></div>
-    </nav>
-    <img class="logo" src="img/name.png" alt="my name" width="50px">
-    
-    <header class="home-header">
-        <h1>Hello, I am Ruolin.</h1>
-        <p>A UX Designer who's creates inclusive and user-friendly design.</p>
-    </header>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<nav class="navbar">
+				<ul>
+					<li class="active"><a href="index.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 
-    <div class="container">
-        <div class="card">
-            <a href="transparency.html">
-            <img class="eachcard" src="img/cover_portal.png" alt="design project for Seattle Rescue Plan team"></a>
-            <h2>Transparency Portal</h2>
-            <p class="tag">web design</p>
-            <p class="tag">mobile</p>
-            <p class="tag">internship</p>
-        </div>
+	<!-- Introduction -->
+	<div class="intro section">
+		<div class="container">
+			<p>Hi, I’m Ruolin Chen.</p>
+			<div class="intro-container intro-split ">
+				<div class="photo">
+					<img src="img/ruolin.jpg" alt="Avatar">
+				</div>
+				<div class="title">
+					<h1>I am a<h1>
+				</div>
+				<h2>Designer &nbsp;·&nbsp; Coordinator &nbsp;·&nbsp; Analyst</h2>
+			</div>
+			<p>I have passion in inclusive design and problem-solving. I enjoy working with teammates and make easy-to-navigate interfaces. I live in Seattle. Outside of school and work, I walk around the lake to enjoy the nature of blue.</p>
+		</div>
+	</div>
 
-        <div class="card">
-            <a href="joyos.html">
-            <img class="eachcard" src="img/cover_joyos.png" alt="JoyOS is a design project in class"></a>
-            <h2>JoyOS</h2>
-            <p class="tag">mobile design</p>
-            <p class="tag">UI/UX</p>
-        </div>
-    </div>
+	<!-- Education -->
+	<div class="resume section second">
+		<div class="container">
+			<h1>Education</h1>
+			<ul class="resume-list list-flat">
+				<li>2019 - 2023</li>
+				<li><b>University of Washington</b></li>
+				<li>Bachelor of Science in Informatics</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- projects -->
+	<div class="resume section second">
+		<div class="container">
+			<h1>Experiences</h1>
+			<ul class="resume-list list-flat">
+				<li>Oct 2022 - Present</li>
+				<li><b class="job">UX Designer</b> | Miho Beauty</li>
+				<li>Design a website for a beauty salon to provide useful information and showcase their services to customers. Involve in user research and competitive analysis, conduct interviews to further understand customers’ challenges to help increase business volume.</li>
+			</ul>
+			<ul class="resume-list list-flat">
+				<li>Jul 2022 - Sep 2022</li>
+				<li><b class="job">Data Visualization & Design Intern</b> | City of Seattle</li>
+				<li>Design a mobile version of the Seattle Rescue Plan Transparency Portal for mobile and tablet users to track budget spending on COVID-19 federal relief funds. Participate in design critiques, support usability testing, and facilitate upstream research and analytics to improve engagement and effectiveness of the platform.</li>
+			</ul>
+			<ul class="resume-list list-flat">
+				<li>Sep 2021 - Jun 2022</li>
+				<li><b class="job">Undergraduate Teaching Assistant</b> | University of Washington</li>
+				<li>Lead weekly 30-student lab sections for Databases & Data Modeling class, respond to questions and help to motivate group interactions. Restructure class materials to better guide students with their projects. Grade assignments and provide feedback specifically on data models, SQL queries, data visualizations, and individual presentations.</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Skills -->
+	<div class="resume section second">
+		<div class="container">
+			<h1>Skills</h1>
+			<ul class="resume-list list-flat">
+				<li>Design</li>
+				<li>Figma, Miro, MS Excel, Power BI, MySQL Workbench</li>
+			</ul>
+			<ul class="resume-list list-flat">
+				<li>Research</li>
+				<li>Surveying, User Interviewing, Usability Testing, Qualitative Coding</li>
+			</ul>
+			<ul class="resume-list list-flat">
+				<li>Programming</li>
+				<li>HTML, CSS, JavaScript, SQL</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<p>
+				Contact me on &nbsp;<a href="https://www.linkedin.com/in/ruolin8/"><i class="fa fa-linkedin" aria-label="linkedin" style="font-size:24px"></i></a>
+			</p>
+		</div>
+	</footer>
 </body>
-
-<footer>
-    <p>
-        Contact me at 
-        <a href="mailto:ruolin8@gmail.com"><i class="fa fa-google" aria-label="github" style="font-size:24px"></i></a>
-        <a href="https://www.linkedin.com/in/ruolin8/"><i class="fa fa-linkedin" aria-label="linkedin" style="font-size:24px"></i></a>
-    </p>
-    <p>&copy; 2022 Ruolin Chen</p>
-</footer>
 </html>
