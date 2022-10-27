@@ -21,6 +21,10 @@ a, p, li {
   font-size: 20px;
 }
 
+.resume .container:first-child {
+  margin-top: 90px;
+}
+
 .resume li:first-child {
   font-size: 0.9em;
   color: #969696;
@@ -28,7 +32,7 @@ a, p, li {
 
 .container {
   margin: auto;
-  max-width: 780px;
+  max-width: 820px;
   padding: 0 20px;
 }
 
@@ -162,7 +166,7 @@ p, ul {
 /* Project page */
 .project {
   margin: auto;
-  max-width: 780px;
+  max-width: 820px;
   padding: 0 20px;
 }
 
