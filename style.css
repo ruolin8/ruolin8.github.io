@@ -186,6 +186,7 @@ p, ul {
 
 .project h2, .project .tag-group {
   margin-left: 30px;
+  border-radius: 5px;
 }
 
 .eachcard {
