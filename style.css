@@ -26,6 +26,7 @@ a, p, li {
   max-width: 800px;
 }
 
+/* Navigation Bar */
 .main-nav {
   background: #f4f4f4;
   padding-top: 23px;
@@ -37,6 +38,32 @@ a, p, li {
 
 .main-nav li.active a {
   color: #4d4d4d;
+}
+
+.main-nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar {
+  font-size: 105%;
+  margin-bottom: 1.65em;
+  float: right;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+}
+
+.navbar li {
+  float: left;
+  margin-right: 1.65em;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .section.second {
@@ -53,6 +80,7 @@ a, p, li {
   position: relative;
 }
 
+/* Home Page Introduction */
 .intro {
   padding: 95px 0px 90px 0px;
 }
@@ -61,7 +89,7 @@ a, p, li {
   float: left;
   width: 150px;
   border-radius: 65px;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 
 .intro h1 {
@@ -78,7 +106,7 @@ html, body, div, span, p, a, ul, li, nav, h1 {
   background: transparent;
 }
 
-h1, .h1 {
+h1 {
   line-height: 1.1;
   font-size: 2.25em;
 }
@@ -86,45 +114,6 @@ h1, .h1 {
 p, ul {
   line-height: 1.65em;
   margin-bottom: 1.65em;
-}
-
-.navbar {
-  font-size: 105%;
-  margin-bottom: 1.65em;
-  float: right;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-}
-
-.navbar ul:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.navbar li {
-  float: left;
-  margin-right: 1.65em;
-}
-
-.navbar a {
-  display: block;
-  text-decoration: none;
-}
-
-.main-nav:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.main-nav:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .resume-list {
@@ -154,12 +143,12 @@ p, ul {
 }
 
 .card p {
-  margin-left: 40px;
+  margin-left: 50px;
   margin-top: -3px;
 }
 
 .project h2 {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .eachcard {
@@ -174,14 +163,6 @@ p, ul {
   transition: 0.25s ease;
 }
 
-.second-card {
-  float: right;
-}
-
-.tag {
-  color: #7C7C7C;
-}
-
 .short {
   inline-size: 450px;
   overflow-wrap: break-word;
@@ -190,7 +171,7 @@ p, ul {
 .view {
   font-size: 16px;
   font-weight: 500;
-  color: #7C7C7C;
+  color: #636363;
   border: 2px solid #b4c5cc;
   display: inline-block;
   padding: 0.5rem 2rem 0.5rem 2rem;
