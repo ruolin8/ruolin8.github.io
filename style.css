@@ -1,9 +1,6 @@
-/* CSS Free Template credit to Draco @afnizarnur
-License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) */
-
-/* Resume page */
-.card h2, .project-text h2, .project-text h3, .project-text h4, a, p, li {
-  font-family: "Lato", Arial, sans-serif;
+/* About Page */
+.resume h1, .card h2, .project-text h2, .project-text h3, .project-text h4, a, p, li {
+  font-family: "Lato";
   color: #4e4e4e;
 }
 
@@ -21,7 +18,13 @@ a, p, li {
   color: #969696;
 }
 
-.container {
+.index {
+  max-width: 610px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+
+.nav-container, .intro .container, .resume .container {
   margin: auto;
   max-width: 800px;
 }
@@ -74,15 +77,15 @@ a, p, li {
   position: relative;
 }
 
-.resume h1, .project h1 {
-  text-transform: uppercase;
+.resume h1 {
   margin-bottom: 25px;
   position: relative;
 }
 
-/* Home Page Introduction */
+/* Index Introduction */
 .intro {
   padding: 95px 0px 90px 0px;
+  font-size: 105%;
 }
 
 .intro img {
@@ -93,6 +96,7 @@ a, p, li {
 }
 
 .intro h1 {
+  font-family: "Nunito";
   margin-bottom: 10px;
 }
 
@@ -120,122 +124,108 @@ p, ul {
   list-style: none;
 }
 
-/* Project page */
+/* Project Cards */
 .project {
-  margin: auto;
-  max-width: 1000px;
-  padding: 0 20px;
-  position: relative;
-}
-
-.project h1 {
-  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  justify-content: center;
 }
 
 .card {
-  padding-top: 80px;
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+  width: 500px;
+  padding-inline: 20px;
+  padding-bottom: 35px;
 }
 
-.card h2 {
-  font-size: 30px;
+.card img {
+  width: 500px;
+  padding-inline: 20px;
 }
 
-.card p {
-  margin-left: 50px;
-  margin-top: -3px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 360px;
+  width: 500px;
+  margin-left: 40px;
+  opacity: 0;
+  transition: 0.4s ease;
+  background-color: #FAFAFA;
 }
 
-.project h2 {
-  margin-left: 50px;
+.card:hover .overlay {
+  opacity: 0.95;
 }
 
-.eachcard {
-  width: 480px;
-}
-
-.eachcard:hover {
-  opacity: 0.6;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  transition: 0.25s ease;
-}
-
-.short {
-  inline-size: 450px;
-  overflow-wrap: break-word;
-}
-
-.view {
-  font-size: 16px;
-  font-weight: 500;
-  color: #636363;
-  border: 2px solid #b4c5cc;
-  display: inline-block;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  border-radius: 10px;
-  background-color: #F1F1F1;
-  margin-top: 15px;
-}
-
-.view:hover {
-  transform: scale(1.05);
-}
-
-footer .container {
+.text {
+  color: #464646;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-/* Each project page */
+/* Each Project Page */
 .project-top {
-text-align: center;
-margin: 120px 0 120px 0;
+  text-align: center;
+  margin: 120px 0 120px 0;
 }
 
 .project-top h1 {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Lato";
   color: #4e4e4e;
   line-height: 1.75em;
 }
 
 .top-picture {
-width: 100%;
-display: block;
+  width: 100%;
+  display: block;
 }
 
 .project-team {
-display: flex;
-flex-wrap: wrap;
-margin: 40px 0 0 160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0 0 160px;
 }
 
 .project-team section:last-child {
-margin-left: 50px;
+  margin-left: 50px;
 }
 
 .project-team p {
-text-align: left;
+  text-align: left;
 }
 
 .project-text {
-margin: 60px 170px 60px 170px;
-line-height: 1.7;
+  margin: 60px 170px 60px 170px;
+  line-height: 1.7;
 }
 
 hr {
-margin: -12px 0 30px 0;
+  margin: -12px 0 30px 0;
 }
 
 .project-text img {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 .project-text p {
-margin-left: 40px;
-margin-right: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Footer */
+footer .container {
+  text-align: center;
 }
