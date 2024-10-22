@@ -2,56 +2,26 @@
 <html>
 <head>
     <title>Ruolin Chen</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="author" content="Ruolin Chen">
-	<meta name="description" content="Portfolio">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/favicon.png" />
-	<link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet' type='text/css'>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <!-- Navigation -->
-	<div class="main-nav">
-		<div class="nav-container">
-			<nav class="navbar">
-				<ul>
-					<li class="active"><a href="index.html">Work</a></li>
-					<li><a href="resume.html">About</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-
-	<!-- Introduction -->
-	<div class="index intro section">
-		<div class="container">
-			<img src="img/avatar.jpg">
-			<h1>Hi, I am Ruolin Chen.</h1>
-			<p>Passionate in optimizing <b><i>user experiences</i></b> with digital products.</p>
-		</div>
-	</div>
-
-    <!-- Projects -->
-	<div class="project">
-		<a href="transparency.html">
-		<img src="img/cover_portal2.png" class="card" alt="design project for Seattle Rescue Plan team">
-		</a>
-
-		<a href="joyos.html">
-			<img src="img/cover_joyos2.png" class="card" alt="mobile OS design project">
-		</a>
-	</div>
-
-    <footer>
-		<div class="container">
-			<p>
-				Contact me on&ensp;<a href="https://www.linkedin.com/in/ruolin8/"><i class="fa fa-linkedin" aria-label="linkedin" style="font-size:24px"></i></a>
-				&ensp;<a href="ruolin@uw.edu"><i class="fa fa-envelope" aria-label="linkedin" style="font-size:24px"></i></a>
-			</p>
-			<p>&copy; 2023 Ruolin Chen</p>
-		</div>
-	</footer>
+    <nav id="navbar"></nav>
+    <div class="intro">
+        <a href="https://www.instagram.com/moonlab_studio">
+            <img src="img/xian.gif" alt="animated puppy" style="width:20%;height:20%;">
+        </a>
+        <h1>I learn about <i>human needs</i> through data to improve user experiences.</h1>
+        <h2>Welcome to <a href="about.html"><u>Ruolin Chen</u></a>'s portfolio</h2>
+    </div>
+    <div class="portfolio" id="project-container"></div>
+    <footer id="footer"></footer>
 </body>
 </html>
